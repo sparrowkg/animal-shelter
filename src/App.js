@@ -1,12 +1,22 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css';
-import Footer from "./component/Footer/Footer";
+import { MainPage } from "./pages/main";
+import { AboutPage } from "./pages/about";
+import { PetsPage } from "./pages/pets";
+import { Layout } from "./component/layout";
 
 function App() {
   return (
-    <div className="App">
-      <Footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Layout />}> 
+      <Route index element={<MainPage />} />
+      <Route path="/dogs" element={<PetsPage />} />
+      <Route path="/cats" element={<PetsPage />} />
+      <Route path="/about" element={<AboutPage />} />  
+    </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
