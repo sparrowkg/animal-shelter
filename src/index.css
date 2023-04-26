@@ -8,8 +8,8 @@
 .container {
   /* margin-right: auto;
   margin-left: auto; */
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 .burgerMenu{
   display: none;
@@ -21,6 +21,11 @@
   }
   .burgerMenu {
     display: block;
+  }
+  .burgerMenu ul {
+    display: flex;
+    flex-direction: column;
+    
   }
   .headerMenu {
     display: none;
@@ -35,6 +40,11 @@
   }
   .burgerMenu {
     display: block;
+  }
+  .burgerMenu ul {
+    display: flex;
+    flex-direction: column;
+    
   }
   .headerMenu {
     display: none;
@@ -58,6 +68,6 @@
 /* Стили для контейнера на экранах с шириной более 1200 пикселей */
 @media (min-width: 1200px) {
   .container {
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
