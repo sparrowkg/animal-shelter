@@ -13,11 +13,11 @@ import "./style.css";
 import { Pagination, Navigation } from "swiper";
 
 export const MainPage = () => {
-    return (
-        <div className="main">
-         {/* <Swiper
+  return (
+    <>
+      <Swiper
         pagination={{
-          type: "progressbar",
+          type: "fraction",
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
@@ -32,7 +32,7 @@ export const MainPage = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
-        </div>
-    )  
+      </Swiper>
+    </>
+  );
 }
