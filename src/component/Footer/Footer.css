@@ -4,9 +4,9 @@
 .Footer {
     background-color: #1a1818;
 }
-.Footer .container {
-    display: flex;
-justify-content: space-between;
+.Footer .container1 {
+display: flex;
+justify-content: space-around;
 align-items: center;
 height: 90px;
 }
@@ -32,10 +32,16 @@ svg{
     align-items: center;
 }
 
+.container1 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   
   /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
-    .Footer .container *{
+    .Footer .container1 *{
         font-size: 10px;
         flex-wrap: wrap;
         }
@@ -52,7 +58,7 @@ svg{
   
   /* Стили для контейнера на средних экранах */
   @media (min-width: 576px) and (max-width: 768px) {
-    .Footer .container *{
+    .Footer .container1 *{
     font-size: 14px;
     }
     .friends {
@@ -62,7 +68,7 @@ svg{
   
   /* Стили для контейнера на больших экранах */
   @media (min-width: 768px) and (max-width: 992px) {
-    .Footer .container *{
+    .Footer .container1 *{
       max-width: 960px;
       font-size: 14px;
     }
