@@ -5,7 +5,7 @@ import './Footer.css';
 export function Footer() {
   return (
     <div className="Footer">
-        <div className="container">
+        <div className="container1">
         <p className="footer_logo">   © ПРИЮТ БИРЮЛЕВО,  2023</p>
         <div className="footer_icon">
         <h4 className="friends"> ПОМОГИ СОБАКАМ – РАССКАЖИ О НАС ДРУЗЬЯМ!</h4>

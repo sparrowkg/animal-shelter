@@ -1,10 +1,9 @@
-
-
 import "././style.css"
-export const Dog = () => {
+export const Cat = () => {
     return (
         <div className="dogs_title">
-            <h3>КАТАЛОГ СОБАК</h3>
+           <h3>КАТАЛОГ КОШЕК</h3> 
             </div>
-    )
+
+    )  
 }
