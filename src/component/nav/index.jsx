@@ -15,7 +15,7 @@ const BurgerMenu = () => {
     <ul>
           <NavLink to="/">Главная</NavLink> 
           <NavLink to="/dogs">Собаки</NavLink> 
-          <NavLink to="/about">Кошки</NavLink>
+          <NavLink to="/cats">Кошки</NavLink>
           <NavLink to="/about">О нас</NavLink> 
         </ul>
     </div>
@@ -26,7 +26,7 @@ const BurgerMenu = () => {
         <ul>
           <NavLink to="/">Главная</NavLink> 
           <NavLink to="/dogs">Собаки</NavLink> 
-          <NavLink to="/about">Кошки</NavLink>
+          <NavLink to="/cats">Кошки</NavLink>
           <NavLink to="/about">О нас</NavLink> 
         </ul>
       )}
