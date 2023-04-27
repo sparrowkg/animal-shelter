@@ -3,6 +3,7 @@ import './App.css';
 import { MainPage } from "./pages/main";
 import { AboutPage } from "./pages/about";
 import { Layout } from "./component/layout";
+import { AdminLayout } from "./component/layout/admin";
 import { PetsPage } from "./pages/pets";
 import { LoginPage } from "./pages/login";
 import { PetsItemPage } from "./pages/pets-item";
@@ -18,11 +19,13 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path="/pets/:type" element={<PetsPage />} />
           <Route path="/pets/:type/:id" element={<PetsItemPage />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/about" element={<AboutPage />} />  
-          <Route path="/admin" element={<AdminPetsPage />} />
-          <Route path="/admin/:id" element={<AdminPetsItemPage />} />
-          <Route path="/admin/new" element={<AdminPetsItemPage />} />
+        </Route>
+        <Route path="/admin" element={<AdminLayout />}> 
+          <Route index element={<AdminPetsPage />} />
+          <Route path="/admin/pets/:id" element={<AdminPetsItemPage />} />
+          <Route path="/admin/pets/new" element={<AdminPetsItemPage />} />
+          <Route path="/admin/login" element={<LoginPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
