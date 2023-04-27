@@ -10,13 +10,12 @@ justify-content: space-around;
 align-items: center;
 height: 90px;
 }
-.friends {
+.footer_friends {
     color: orange;
 }
 .footer_icons  {
 display: flex;
 justify-content: center;
-
 }
 .email {
     color: white;
@@ -27,17 +26,11 @@ svg{
     stroke: white;
     margin: 8px 20px;
 }
+
 .footer_email {
     display: flex;
     align-items: center;
 }
-
-.container1 {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
   
   /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
@@ -45,35 +38,39 @@ svg{
         font-size: 10px;
         flex-wrap: wrap;
         }
-    .friends {
+    .footer_friends {
+    display: none;
+    }
+    .footer_icons {
+       display: none;
+    }
+  }
+
+  /* Стили для контейнера на средних экранах */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .Footer .container1 *{
+     font-size: 12px;
+    }
+    .footer_friends {
         text-align: center;
-        width: 150px;
+        width: 200px;
     }
     svg{
         width: 15px;
         height: 15px;
-        margin: 8px 10px;
-    }
-  }
-  
-  /* Стили для контейнера на средних экранах */
-  @media (min-width: 576px) and (max-width: 768px) {
-    .Footer .container1 *{
-    font-size: 14px;
-    }
-    .friends {
-        text-align: center;
+        margin: 8px 20px;
     }
   }
   
   /* Стили для контейнера на больших экранах */
   @media (min-width: 768px) and (max-width: 992px) {
-    .Footer .container1 *{
+    .Footer  *{
       max-width: 960px;
       font-size: 14px;
     }
-    .friends {
+    .footer_friends {
         text-align: center;
+        width: 250px;    
     }
     svg{
         width: 15px;
