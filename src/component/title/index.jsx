@@ -1,5 +1,7 @@
-export const  Title = () => {
+import './style.css'
+
+export const  Title = ({ children }) => {
     return (
-        <div>Title</div>
+        <h1 className="title">{children}</h1>
     )  
 }

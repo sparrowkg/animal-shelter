@@ -6,49 +6,24 @@
 
 /* Стили для контейнера */
 .container {
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* padding-right: 15px;
-  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.burgerMenu{
-  display: none;
-}
+
 /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
   }
-  .burgerMenu {
-    display: block;
-  }
-  .burgerMenu ul {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .headerMenu {
-    display: none;
-  } 
 }
 
 /* Стили для контейнера на средних экранах */
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
     max-width: 720px;
-
   }
-  .burgerMenu {
-    display: block;
-  }
-  .burgerMenu ul {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .headerMenu {
-    display: none;
-  } 
 }
 
 /* Стили для контейнера на больших экранах */
@@ -68,6 +43,6 @@
 /* Стили для контейнера на экранах с шириной более 1200 пикселей */
 @media (min-width: 1200px) {
   .container {
-    /* width: 100vw; */
+    max-width: 1140px;
   }
 }
