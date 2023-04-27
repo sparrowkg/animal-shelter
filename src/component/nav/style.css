@@ -1,74 +1,43 @@
-.nav {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    font-size: 22px;
-}
-.nav li {
-    margin-left: 20px;
-}
-
-.burgerMenu button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
- .burgerMenu ul {
-    border: 1px solid #000;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 3rem;
-    top: 8rem;
-  }
-  
-  .burgerMenu li {
-    padding: 1rem;
-  }
-.logoMenu {
-  width: 10vw;
-  height: 10vh;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.burgerMenu{
+.nav__links {
+  background-color: blue;
   display: none;
 }
-
-@media (max-width: 576px) {
-  .burgerMenu {
-    display: block;
-  }
-  .burgerMenu ul {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .headerMenu {
-    display: none;
-  } 
+.nav__links a {
+  font-weight: 700;
+  margin-left: 20px;
+}
+.nav__dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ddd;
+  z-index: 10;
+  right: 0;
+}
+.nav__dropdown-parent {
+  position: relative;
+}
+.nav__dropdown-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.nav__dropdown a {
+  padding: 20px;
+  border: 1px solid black;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .burgerMenu {
-    display: block;
-  }
-  .burgerMenu ul {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .headerMenu {
-    display: none;
-  } 
+.nav__burger {
+  display: block;
 }
 
-
+@media (min-width: 768px) {
+  .nav__burger {
+    display: none;
+  }
+  .nav__links {
+    display: block;
+  }  
+}

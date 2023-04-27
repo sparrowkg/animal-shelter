@@ -1,0 +1,18 @@
+.burger-btn {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.burger-btn:hover {
+    background-color: #9a1919;
+}
+.burger-btn svg {
+    width: 100%;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    margin-top: 3px;
+}

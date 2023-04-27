@@ -1,20 +1,12 @@
-
 .header {
-  /* width: 100%; */
   background-color: #fe8514;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
 }
- .logo {
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
   width: 100px;
   height: 100px;
- }
- .header a{
-  text-decoration: none;
-  padding: 20px 40px;
-  background-color: #f57d0d;
-  color: white;
-  border:4px solid #fe8514;
- }
+}

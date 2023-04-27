@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom"
+import { Links } from './links'
+import { Dropdown } from './dropdown'
+import { Burger } from '../burger'
 import "./style.css"
 
 const BurgerMenu = () => {
@@ -10,35 +12,12 @@ const BurgerMenu = () => {
   };
 
   return (
-    <>
-    <div className='headerMenu'>
-    <ul>
-          <NavLink to="/">Главная</NavLink> 
-          <NavLink to="/pets/dogs">Собаки</NavLink> 
-          <NavLink to="/pets/cats">Кошки</NavLink>
-          <NavLink to="/about">О нас</NavLink> 
-        </ul>
+    <div>
+      <Links />
+
+      <Burger className="nav__burger" onClick={handleToggleMenu}/>
+      { isOpen && <Dropdown onClose={handleToggleMenu}/> }
     </div>
-      
-      <div className='burgerMenu'>
-   <button onClick={handleToggleMenu}>
-   <svg className='logoMenu' width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 17H20M4 12H20M4 7H20" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-   </button>
-      {isOpen && (
-      <div>
-        <ul>
-          <NavLink to="/">Главная</NavLink> 
-          <NavLink to="/pets/dogs">Собаки</NavLink> 
-          <NavLink to="/pets/cats">Кошки</NavLink>
-          <NavLink to="/about">О нас</NavLink> 
-        </ul>
-      </div>
-      )}
-      </div>
-   
-    </>
   );
 };
 
