@@ -14,8 +14,8 @@ const BurgerMenu = () => {
     <div className='headerMenu'>
     <ul>
           <NavLink to="/">Главная</NavLink> 
-          <NavLink to="/dogs">Собаки</NavLink> 
-          <NavLink to="/cats">Кошки</NavLink>
+          <NavLink to="/pets/dogs">Собаки</NavLink> 
+          <NavLink to="/pets/cats">Кошки</NavLink>
           <NavLink to="/about">О нас</NavLink> 
         </ul>
     </div>
@@ -30,8 +30,8 @@ const BurgerMenu = () => {
       <div>
         <ul>
           <NavLink to="/">Главная</NavLink> 
-          <NavLink to="/dogs">Собаки</NavLink> 
-          <NavLink to="/cats">Кошки</NavLink>
+          <NavLink to="/pets/dogs">Собаки</NavLink> 
+          <NavLink to="/pets/cats">Кошки</NavLink>
           <NavLink to="/about">О нас</NavLink> 
         </ul>
       </div>
