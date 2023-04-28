@@ -2,6 +2,6 @@ import './style.css'
 
 export const AdminPetsItemPage = () => {
   return (
-      <div>AdminPetsItemPage</div>
+      <div className='container'>AdminPetsItemPage</div>
   )  
 }
