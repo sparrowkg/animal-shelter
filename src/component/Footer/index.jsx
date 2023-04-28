@@ -1,18 +1,17 @@
 import React from "react";
 import './Footer.css';
+import { FacebookIcon } from './facebook'
 
 
 export function Footer() {
   return (
     <div className="Footer">
-        <div className="container1">
+        <div className="footer-container container">
         <p className="footer_logo">   © ПРИЮТ БИРЮЛЕВО,  2023</p>
         <div className="footer_icon">
         <h4 className="footer_friends"> ПОМОГИ СОБАКАМ – РАССКАЖИ О НАС ДРУЗЬЯМ!</h4>
       <div className="footer_icons"> 
-       <svg viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 1.91833H21V8.33482H17.6667C15.8257 8.33482 14.3333 9.7712 14.3333 11.5431V14.7513H21L19.2608 21.1678H14.0435V34.0008H7.08695V21.1678H1V14.8148H7.66667V9.93894C7.66667 5.50929 11.3977 1.91833 16 1.91833V1.91833Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        <FacebookIcon />
 <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 7.6181C1 4.42874 3.68629 1.84326 7 1.84326H25C28.3137 1.84326 31 4.42874 31 7.6181V24.9426C31 28.1319 28.3137 30.7174 25 30.7174H7C3.68629 30.7174 1 28.1319 1 24.9426V7.6181Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M16.0002 22.697C19.6821 22.697 22.6668 19.8242 22.6668 16.2805C22.6668 12.7368 19.6821 9.86401 16.0002 9.86401C12.3183 9.86401 9.3335 12.7368 9.3335 16.2805C9.3335 19.8242 12.3183 22.697 16.0002 22.697Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
