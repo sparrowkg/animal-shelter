@@ -6,7 +6,7 @@ export const PetsPage = () => {
   const { type } = useParams()
 
   return (
-      <div>
+      <div className='container'>
         <Title>
           { type === 'cats' ? 'Кошки' : 'Собаки' }
         </Title>
