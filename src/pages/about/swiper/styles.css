@@ -21,3 +21,6 @@ body {
 .swiper-slide {
   overflow: hidden;
 }
+.swiper-zoom-container {
+    padding-top: 10px;
+}
