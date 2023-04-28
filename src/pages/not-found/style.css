@@ -1,0 +1,11 @@
+.notfoundpage {
+    text-align: center;
+    margin-top: 70px;
+}
+.notfound {
+    color: rgb(234, 162, 30);
+    font-size: 140px;
+}
+.notpage {
+    font-size: 30px;
+}
