@@ -1,0 +1,28 @@
+.avtorisation {
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  background-color: #eee;
+  padding: 20px;
+  width: 500px;
+  
+}
+input, button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 20px;
+}
+h3 {
+  margin: 0;
+}
+
+/* Стили для Admin-pets */
+.admin-pets__title {
+  
+}
