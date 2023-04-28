@@ -1,0 +1,22 @@
+.petsitempage_img {
+    width: 400px;
+}
+
+.petsitempage_block {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+}
+.petsitempage_info {
+    display: block;
+}
+.petsitempage_name {
+    font-size: 30px;
+}
+.petsitempage_contac {
+    display: flex;
+    padding-top: 100px;
+}
+.petsitempage_contacts {
+    padding-left: 30px;
+}
