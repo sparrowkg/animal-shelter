@@ -2,14 +2,14 @@ import React from "react";
 import './Footer.css';
 import { FacebookIcon } from './facebook'
 import { InstagramIcon } from "./instagram";
-import { TwitterIcon } from "./Twitter";
+import { TwitterIcon } from "./twitter";
 
 
 export function Footer() {
   return (
     <div className="Footer">
         <div className="footer-container container">
-        <p className="footer_logo">   © ПРИЮТ БИРЮЛЕВО,  2023</p>
+        <p className="footer_logo">   © Сердце в лапках,  2023</p>
         <div className="footer_icon">
         <h4 className="footer_friends"> ПОМОГИ СОБАКАМ – РАССКАЖИ О НАС ДРУЗЬЯМ!</h4>
       <div className="footer_icons"> 

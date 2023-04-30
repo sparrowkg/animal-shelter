@@ -26,6 +26,9 @@ svg{
     stroke: white;
     margin: 8px 20px;
 }
+svg:hover {
+    background-color: orange;
+}
 
 .footer_email {
     display: flex;
@@ -34,26 +37,27 @@ svg{
   
   /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
-    .Footer .container1 *{
-        font-size: 10px;
+    .Footer *{
+        font-size: 12px;
         flex-wrap: wrap;
         }
     .footer_friends {
-    display: none;
+        display: none;
     }
     .footer_icons {
-       display: none;
+        display: none;
     }
   }
 
   /* Стили для контейнера на средних экранах */
   @media (min-width: 576px) and (max-width: 768px) {
-    .Footer .container1 *{
-     font-size: 12px;
+    .Footer  *{
+        font-size: 12px;
     }
     .footer_friends {
         text-align: center;
         width: 200px;
+        font-size: 12px;
     }
     svg{
         width: 15px;
@@ -65,12 +69,11 @@ svg{
   /* Стили для контейнера на больших экранах */
   @media (min-width: 768px) and (max-width: 992px) {
     .Footer  *{
-      max-width: 960px;
-      font-size: 14px;
+       max-width: 960px;
     }
     .footer_friends {
         text-align: center;
-        width: 250px;    
+        width: 250px;
     }
     svg{
         width: 15px;

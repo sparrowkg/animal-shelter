@@ -1,17 +1,27 @@
 .petsitempage_img {
-    width: 400px;
+   width: 400px;
+   height: 300px;
+   object-fit: cover;
 }
 
 .petsitempage_block {
     display: flex;
     padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1), 
+                0px 2px 4px rgba(0,0,0,0.1),
+                0px 2px 4px rgba(0,0,0,0.1),
+                0px 8px 16px rgba(0,0,0,0.1);
 }
 .petsitempage_info {
     display: block;
 }
 .petsitempage_name {
     font-size: 30px;
+    color: #fe8514;
 }
 .petsitempage_contac {
     display: flex;
@@ -20,3 +30,97 @@
 .petsitempage_contacts {
     padding-left: 30px;
 }
+.petsitempage_male {
+    padding-top: 15px;
+}
+.petsitempage_descrition{
+    width: 500px;
+    padding-top: 20px;
+}
+.petsitempage_kartinki img {
+    width: 370px;
+    padding-right: 10px;
+}
+.petsitempage_kartinki {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+/* Стили для контейнера на маленьких экранах */
+ @media (max-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    .petsitempage_block {
+        display: block;
+        text-align: center;
+    }
+    .petsitempage_name {
+        padding-top: 15px;
+    }
+    .petsitempage_img {
+        width: 270px;
+    }
+    .petsitempage_contac {
+        display: block;
+        justify-content: space-around;
+    }
+    .petsitempage_kartinki  img {
+       display: block;
+       margin: 0 auto;
+       padding-top: 20px;
+    }
+    .petsitempage_contacts {
+        padding-top: 10px;
+    }
+  }
+  
+  /* Стили для контейнера на средних экранах */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    .petsitempage_block {
+        display: block;
+        text-align: center;
+    }
+    .petsitempage_name {
+        padding-top: 15px;
+    }
+    .petsitempage_contac {
+        display: flex;
+        justify-content: space-around;
+    }
+    .petsitempage_kartinki  img {
+       display: block;
+       margin: 0 auto;
+       padding-top: 20px;
+    }
+  }
+  
+  /* Стили для контейнера на больших экранах */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+   .petsitempage_img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .petsitempage_kartinki img {
+        width: 310px;
+     }
+  }
+  /* Стили для контейнера на очень больших экранах */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+    .petsitempage_kartinki img {
+        width: 345px;
+    }
+  }
+  
+ 
