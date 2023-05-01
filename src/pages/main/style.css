@@ -9,7 +9,9 @@
   padding: 5%;
   width: 100%;
   font-size: 18px;
-  background-color:  #fe8514;
+  /* background-color:  #fe8514; */
+  /* background-color: background: rgb(253,172,95); */
+  background: radial-gradient(circle, rgba(253,172,95,1) 27%, rgba(254,133,20,1) 61%);;
 }
 
 .swiper-slide img {

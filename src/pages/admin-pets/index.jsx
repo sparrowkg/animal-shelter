@@ -24,23 +24,101 @@ const mockPets = [
 ];
 
 
+
+
 export const AdminPetsPage = () => {
   const [pets, setPets] = useState(mockPets)
   useEffect(() => {
     // fetch()
   }, [])
 
+  
+
   return (
-      <div className='container'>
-        <div className="admin-pets__title">Имя питомца</div>
-        <button>add</button>
-        <div className="admin-pets__list">
-          {
-            pets.map(pet => (
-              <PetRow key={pet.id} pet={pet} />
-            ))
-          }
+      <div className='container mtb-3'>
+        <div className="table_responsive">
+        <table className='table'>
+     <thead>
+     <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Id</th>
+    <th>Gender</th>
+    <th>Details</th>
+    <th>Update</th>
+    <th>Delete</th>
+    </tr>
+     </thead>
+  <tr>
+    <td>1</td>
+    <td>Teddi</td>
+    <td>012</td>
+    <td>dog</td>
+    <td>Burger</td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Teddi</td>
+    <td>012</td>
+    <td>dog</td>
+    <td>Burger</td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Teddi</td>
+    <td>012</td>
+    <td>dog</td>
+    <td>Burger</td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Teddi</td>
+    <td>012</td>
+    <td>dog</td>
+    <td>Burger</td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Teddi</td>
+    <td>012</td>
+    <td>dog</td>
+    <td>Burger</td>
+    <td><button>Update</button></td>
+    <td><button>Delete</button></td>
+  </tr>
+ 
+</table>
         </div>
       </div>
   )  
 }
+
+
+// export const AdminPetsPage = () => {
+//   const [pets, setPets] = useState(mockPets)
+//   useEffect(() => {
+//     // fetch()
+//   }, [])
+
+//   return (
+//       <div className='container'>
+//         <div className="admin-pets__title">Имя питомца</div>
+//         <button>add</button>
+//         <div className="admin-pets__list">
+//           {
+//             pets.map(pet => (
+//               <PetRow key={pet.id} pet={pet} />
+//             ))
+//           }
+//         </div>
+//       </div>
+//   )  
+// }
