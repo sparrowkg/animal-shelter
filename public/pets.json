@@ -1,0 +1,12 @@
+[
+  {
+    "id": 2,
+    "name": "ФЛОРА",
+    "species": "cat",
+    "gender": "male",
+    "short_text": "Свежа и прекрасна, как весенний цветок",
+    "description": "Свежа и прекрасна, как весенний цветок ljg",
+    "main_image": "http://127.0.0.1:8000/animal_images/cat_fjCAPDn.jpeg",
+    "caretaker": null
+  }
+]
