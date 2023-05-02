@@ -41,19 +41,25 @@ export const AdminPetsItemPage = () => {
         />
       </div>
       
-      <br />
-      <label htmlFor="age">Age:</label>
-      <input type="number" id="age" value={age} onChange={(e) => setAge(e.target.value)} />
-      <br />
-      <label htmlFor="breed">Breed:</label>
-      <input type="text" id="breed" value={breed} onChange={(e) => setBreed(e.target.value)} />
-      <br />
-      <label htmlFor="description">Description:</label>
-      <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
-      <br />
-      <label htmlFor="image">Image:</label>
-      <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)} />
-      <br />
+       <div>
+          <label htmlFor="age">Age:</label>
+          <input type="number" id="age" value={age} onChange={(e) => setAge(e.target.value)} />
+       </div>
+       
+       <div>
+         <label htmlFor="breed">Breed:</label>
+         <input type="text" id="breed" value={breed} onChange={(e) => setBreed(e.target.value)} />
+       </div>
+       
+       <div>
+         <label htmlFor="description">Description:</label>
+         <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
+       </div>
+
+       <div>
+         <label htmlFor="image">Image:</label>
+         <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)} />
+       </div>
       <button type="submit">Create Animal</button>
     </form>
   );

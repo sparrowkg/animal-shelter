@@ -8,7 +8,10 @@ function Header () {
     <div className='header'> 
       <div className="container">
         <div className="header__inner">
-          <img className="logo" src={Logo} alt="" />
+         <div className="header__h3">
+         <img className="logo" src={Logo} alt="" />
+          <h3>Сердце в лапках</h3>
+         </div>
           <Nav/>
         </div>
       </div>
