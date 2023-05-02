@@ -23,11 +23,11 @@
     background-color: rgb(210, 195, 202);
 }
 
-.petcatalog_img {
+.petcatalog_img_i {
     width: 250px;
     height: 270px;
-    background-color: #cdd7df;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .petcatalog_name {

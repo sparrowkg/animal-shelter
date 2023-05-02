@@ -11,8 +11,8 @@ export const PetCatalogItem = ({ pet }) => {
     return (
         <div className='container'>
             <div className='petcatalog_block'>
-                <div className='petcatalog_img'>
-                    {pet.main_image}
+                <div className='petcatalog_img'> 
+                     <img className='petcatalog_img_i' src={pet.main_image} alt="" />
                 </div>
                 <div className='petcatalog_name'>
                     <h2 className='petcatalog_names'>{pet.name} </h2>
