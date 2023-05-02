@@ -1,14 +1,6 @@
 import './style.css'
 import React, { useState } from 'react';
 
-// export const LoginPage = () => {
-//   return (
-//       <div>
-
-//       </div>
-//   )  
-// }
-
  export const LoginPage = () =>{
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -35,11 +27,17 @@ import React, { useState } from 'react';
       <h1>Страница авторизации админа</h1>
       {error && <div>{error}</div>}
       <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            placeholder='Имя пользователя' value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input 
+          type="text" 
+          placeholder='Имя пользователя' value={username} onChange={(e) => setUsername(e.target.value)}
+        />
        
-          <input type="password" placeholder='Пароль' value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input
+          type="password" 
+          placeholder='Пароль' 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
         <button type="submit">Войти</button>
       </form>
