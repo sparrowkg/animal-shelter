@@ -33,7 +33,7 @@ export const PetsPage = () => {
           { type === 'cats' ? 'Кошки' : 'Собаки' }
         </Title>
 
-        <div className="content">
+        <div className="content flex">
           {
             list.map(pet => (
               <PetCatalogItem pet={pet} key={pet.id}/>

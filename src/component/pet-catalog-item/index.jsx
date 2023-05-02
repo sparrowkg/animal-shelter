@@ -10,7 +10,8 @@ export const PetCatalogItem = ({ pet }) => {
 
     return (
         <div className='container'>
-            <div className='petcatalog_block'>
+            <div className='petcatalog_blocks'> 
+             <div className='petcatalog_block'>
                 <div className='petcatalog_img'> 
                      <img className='petcatalog_img_i' src={pet.main_image} alt="" />
                 </div>
@@ -24,6 +25,7 @@ export const PetCatalogItem = ({ pet }) => {
                 <div className='percatalog_podrobnee' onClick={getPodrobnee}>
                     ПОДРОБНЕЕ
                 </div>
+             </div>
             </div>
         </div>
     )
