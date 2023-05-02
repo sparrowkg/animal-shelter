@@ -4,7 +4,7 @@ import { PetCatalogItem } from '../../component/pet-catalog-item'
 import './style.css'
 import { useEffect, useState } from 'react'
 
-const api = ''
+const api = 'http://35.195.136.135/api'
 
 const getRoute = (type) => {
   if (type === 'cats') return 'cat'
@@ -20,8 +20,7 @@ export const PetsPage = () => {
     const route = getRoute(type)
     if (!route) return
 
-    //fetch(`${api}/${route}`)
-    fetch(`/pets.json`)
+    fetch(`${api}/${route}/`)
       .then(res => res.json())
       .then((data) => {
         setList(data)
