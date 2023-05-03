@@ -23,19 +23,21 @@ import { useEffect, useState } from 'react'
         }
       <div>
         <div className='petsitempage_info'>
-          {
-          <h3 className='petsitempage_name'>{li.name}</h3>
+          <div className='petsitem_name_male'>
+            {
+          <h2 className='petsitempage_name'>{li.name}</h2>
           }
           {
            <p className='petsitempage_male'>Пол питомца: {li.gender} </p> 
           }
+          </div>
           {
-            <p className='petsitempage_descrition' >Описание: {li.description} </p>
+            <p className='petsitempage_descrition' > {li.description} </p>
           }
         </div>
         
         <div className='petsitempage_contac'>
-          <h4 className='petsitempage_volonter'>ВОЛОНТЕР:ВАРВАРА</h4>
+          <h4 className='petsitempage_volonter'>ВОЛОНТЕР: ВАРВАРА</h4>
           <h4 className='petsitempage_contacts'>ТЕЛЕФОН: +996 555 567 847 </h4>
         </div>
       </div>

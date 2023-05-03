@@ -12,20 +12,20 @@
 
 .petcatalog_line {
     width: 350px;
-    height: 0.4px;
+    height: 0.1px;
     background-color: rgb(210, 195, 202);
     margin-top: 30px;
 }
 
 .petcatalog_lin {
     width: 350px;
-    height: 0.4px;
+    height: 0.9px;
     background-color: rgb(210, 195, 202);
 }
 
 .petcatalog_img_i {
     width: 250px;
-    height: 270px;
+    height: 250px;
     margin: 0 auto;
     object-fit: cover;
 }

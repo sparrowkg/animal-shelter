@@ -3,7 +3,6 @@
    height: 370px;
    object-fit: cover;
 }
-
 .petsitempage_block {
     display: flex;
     padding-top: 40px;
@@ -20,7 +19,7 @@
     display: block;
 }
 .petsitempage_name {
-    font-size: 30px;
+    font-size: 28px;
     color: #fe8514;
 }
 .petsitempage_contac {
@@ -57,13 +56,16 @@
     }
     .petsitempage_name {
         padding-top: 15px;
+        font-size: 20px;
     }
     .petsitempage_img {
         width: 270px;
+        height: 270px;
     }
     .petsitempage_contac {
         display: block;
         justify-content: space-around;
+        font-size: 14px;
     }
     .petsitempage_kartinki  img {
        display: block;
@@ -72,6 +74,11 @@
     }
     .petsitempage_contacts {
         padding-top: 10px;
+    }
+    .petsitempage_descrition {
+        width: 290px;
+        text-align: left;
+        margin: 0 auto;
     }
   }
   
@@ -86,6 +93,7 @@
     }
     .petsitempage_name {
         padding-top: 15px;
+        font-size: 26px;
     }
     .petsitempage_contac {
         display: flex;
@@ -96,8 +104,12 @@
        margin: 0 auto;
        padding-top: 20px;
     }
+    .petsitempage_descrition {
+        margin: 0 auto;
+        text-align: left;
+    }
+   
   }
-  
   /* Стили для контейнера на больших экранах */
   @media (min-width: 768px) and (max-width: 992px) {
     .container {
@@ -105,12 +117,26 @@
     }
    .petsitempage_img {
         width: 300px;
-        height: 300px;
+        height: 330px;
         object-fit: cover;
+    }
+    .petsitempage_descrition{
+        width: 320px;
     }
     .petsitempage_kartinki img {
         width: 310px;
      }
+     .petsitempage_contac {
+        display: block;
+        margin: 0 auto;
+    }
+    .petsitempage_volonter {
+        text-align: right;
+    }
+    .petsitempage_contacts {
+        text-align: right;
+        padding-top: 8px;
+    }  
   }
   /* Стили для контейнера на очень больших экранах */
   @media (min-width: 992px) and (max-width: 1200px) {
@@ -119,5 +145,8 @@
     }
     .petsitempage_kartinki img {
         width: 345px;
+    }
+    .petsitempage_descrition {
+        width: 460px;
     }
   }
