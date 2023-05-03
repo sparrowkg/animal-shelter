@@ -5,7 +5,7 @@ export const PetCatalogItem = ({ pet }) => {
 
     const navigate = useNavigate()
     const getPodrobnee = () => {
-        navigate("/pets/:type/:id")
+        navigate(`/pets/${pet.species}/${pet.id}`)
     }
 
     return (
