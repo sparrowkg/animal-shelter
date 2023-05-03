@@ -9,7 +9,7 @@ export const AdminPetsItemPage = () => {
   const [gender, setGender] = useState('');
   const [short_text, setShort_text] = useState('');
   const [description, setDescription] = useState('');
-  const [main_image, setImage] = useState('');
+  const [image, setImage] = useState('');
   const { id, type } = useParams()
   const [data, setData] = useState(null)
 
@@ -32,8 +32,7 @@ export const AdminPetsItemPage = () => {
     if (id === 'new') return
     setName(data?.name)
     setGender(data?.gender)
-    setShort_text(data?.short_text)
-    setDescription(data?.description)
+    setShort_text(data?.)
   }, [data])
 
   const handleSubmit = (event) => {
@@ -43,7 +42,7 @@ export const AdminPetsItemPage = () => {
       gender: gender,
       short_text: short_text,
       description: description,
-      main_image:  main_image,
+      image: image
     };
     
 
@@ -78,8 +77,8 @@ export const AdminPetsItemPage = () => {
        </div>
 
        <div>
-         <label htmlFor=" main_image">Image:</label>
-         <input type="image" id=" main_image" value={ main_image} onChange={(e) => setImage(e.target.value)} />
+         <label htmlFor="image">Image:</label>
+         <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)} />
        </div>
       <button type="submit">Create Animal</button>
     </form>

@@ -23,8 +23,8 @@ function App() {
         </Route>
         <Route path="/admin" element={<AdminLayout />}> 
           <Route index element={<AdminPetsPage />} />
-          <Route path="/admin/pets/:id" element={<AdminPetsItemPage />} />
-          <Route path="/admin/pets/new" element={<AdminPetsItemPage />} />
+          <Route path="/admin/pets/:type/:id" element={<AdminPetsItemPage />} />
+          <Route path="/admin/pets/:type/new" element={<AdminPetsItemPage />} />
           <Route path="/admin/login" element={<LoginPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
