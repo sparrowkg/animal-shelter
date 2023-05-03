@@ -1,9 +1,9 @@
-
-.about_title {
-    text-align: center;
+.about_title_text {
+    color: black;
+    width: 130px;
     font-size: 32px;
     padding-top: 40px;
-    font-weight: 1200;
+    margin: 0 auto;
 }
 .about_container {
     width: 700px;
@@ -79,5 +79,4 @@
         height: 400px;
         object-fit: cover;
     }
-
   }
