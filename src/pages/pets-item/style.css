@@ -47,7 +47,6 @@
     padding-bottom: 60px;
 }
 
-/* Стили для контейнера на маленьких экранах */
  @media (max-width: 576px) {
     .container {
        max-width: 540px;
