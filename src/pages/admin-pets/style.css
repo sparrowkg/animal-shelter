@@ -36,7 +36,7 @@ padding: 0 15px;
 /* table tr:nth-child(even) {
   background: #e04444;
 } */
-.table tr {
+table tr {
   transition: all .3s;
 }
 table tr:hover {
@@ -49,4 +49,14 @@ table td:not(:last-child) {
   overflow-x: auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }  
+thead {
+  background-color: aqua;
+  height: 50px;
+}
+th {
+  font-size: 24px;
+}
+button {
+  text-decoration: none;
+}
 

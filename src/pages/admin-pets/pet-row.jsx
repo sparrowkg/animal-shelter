@@ -12,7 +12,7 @@ export const PetRow = ({ pet }) => {
       <td>{pet.name}</td>
       <td>{pet.gender}</td>
       <td>{pet.species}</td>
-      <td><button><NavLink to={`/admin/pets/${pet.id}`}>UPDATE</NavLink></button> </td>
+      <td><NavLink to={`/admin/pets/${pet.id}`}><button>UPDATE</button></NavLink> </td>
       <td><button onClick={handleDelete}>DELETE</button></td>
     
    </tr>

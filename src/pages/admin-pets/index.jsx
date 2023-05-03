@@ -16,8 +16,8 @@ export const AdminPetsPage = () => {
   return (
       <div className='container'>
        
-        <NavLink to="/admin/pets/new"><button>Добавит питомца</button></NavLink>
-        <div className="admin-pets__title">Имя питомца</div>
+        <NavLink to="/admin/pets/new"><button>Добавить питомца</button></NavLink>
+       
         <div className='admin-pets-content'>
           <table className="admin-pets__list">
            <thead>
