@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import './style.css'
 
 export const PetCatalogItem = ({ pet }) => {
-
     const navigate = useNavigate()
     const getPodrobnee = () => {
         navigate(`/pets/${pet.species}/${pet.id}`)
@@ -13,7 +12,7 @@ export const PetCatalogItem = ({ pet }) => {
             <div className='petcatalog_blocks'> 
              <div className='petcatalog_block'>
                 <div className='petcatalog_img'> 
-                     <img className='petcatalog_img_i' src={pet.main_image} alt="" />
+                     <img className='petcatalog_img_i' src={pet.main_image} alt=""/>
                 </div>
                 <div className='petcatalog_name'>
                     <h2 className='petcatalog_names'>{pet.name} </h2>

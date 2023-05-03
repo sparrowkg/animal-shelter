@@ -1,14 +1,14 @@
 import './style.css'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
 
-const api = 'http://35.195.136.135/api'
 
  function PetsItemPage() {
   const [li, setLi] = useState([])
-
   useEffect(() => {
-    fetch(`http://35.195.136.135/api/dog/1`)
+    const currentURL = window.location.href;
+    const urlParts = currentURL.split('/');
+    const lastCharacter = urlParts.slice(-2).join('/');
+    fetch(`http://35.195.136.135/api/${lastCharacter}`)
       .then(res => res.json())
       .then((data) => {
         setLi(data)
@@ -19,7 +19,7 @@ const api = 'http://35.195.136.135/api'
     <div className='container'>
     <div className='petsitempage_block'>
         {
-            <img className='petsitempage_img' src={li.main_image} alt="" />
+          <img className='petsitempage_img' src={li.main_image} alt="" />
         }
       <div>
         <div className='petsitempage_info'>
