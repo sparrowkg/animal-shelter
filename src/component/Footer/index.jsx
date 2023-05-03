@@ -2,7 +2,7 @@ import React from "react";
 import './Footer.css';
 import { FacebookIcon } from './facebook'
 import { InstagramIcon } from "./instagram";
-import { TwitterIcon } from "./twitter";
+import { TwitterIcon } from "./Twitter";
 
 
 export function Footer() {

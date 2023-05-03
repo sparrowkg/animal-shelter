@@ -6,7 +6,7 @@ import { Layout } from "./component/layout";
 import { AdminLayout } from "./component/layout/admin";
 import { PetsPage } from "./pages/pets";
 import { LoginPage } from "./pages/login";
-import { PetsItemPage } from "./pages/pets-item";
+import PetsItemPage from "./pages/pets-item";
 import { AdminPetsPage } from "./pages/admin-pets";
 import { AdminPetsItemPage } from "./pages/admin-pets-item";
 import { NotFoundPage } from "./pages/not-found";
