@@ -17,7 +17,7 @@ export const AdminPetsPage = () => {
       <div className='container'>
        
         <NavLink to="/admin/pets/cat/new"><button>Добавить кошку</button></NavLink>
-        <NavLink to="/admin/pets/dog/new"><button>Добавить собаку</button></NavLink>
+        <NavLink to="/admin/pets/dog/new"><button>Добавить </button></NavLink>
        
         <div className='admin-pets-content'>
           <table className="admin-pets__list">

@@ -79,7 +79,7 @@ export const AdminPetsItemPage = () => {
 
        <div>
          <label htmlFor=" main_image">Image:</label>
-         <input type="image" id=" main_image" value={ main_image} onChange={(e) => setImage(e.target.value)} />
+         <input type="text" id=" main_image" value={ main_image} onChange={(e) => setImage(e.target.value)} />
        </div>
       <button type="submit">Create Animal</button>
     </form>
