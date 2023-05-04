@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 .main {
   width: 100%;
   height: 80vh;
@@ -24,7 +24,7 @@
   }
   .swipper-content h1 {
     margin: auto;
-    font-size: 70px;
+    font-size: 50px;
   }
 .mySwiper img {
   width: 50%;
@@ -39,14 +39,14 @@
 /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
   .main__slide h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 /* Стили для контейнера на средних экранах */
 @media (min-width: 576px) and (max-width: 768px) {
   .main__slide h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
  }
 

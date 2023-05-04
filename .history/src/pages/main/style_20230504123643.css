@@ -39,14 +39,14 @@
 /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
   .main__slide h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 /* Стили для контейнера на средних экранах */
 @media (min-width: 576px) and (max-width: 768px) {
   .main__slide h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
  }
 

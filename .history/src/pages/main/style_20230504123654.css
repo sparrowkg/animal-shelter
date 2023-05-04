@@ -39,7 +39,7 @@
 /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
   .main__slide h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
