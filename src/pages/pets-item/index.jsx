@@ -14,12 +14,12 @@ import { useEffect, useState } from 'react'
         setLi(data)
       })
   }, [])
-  return (
-    
-    <div className='container'>
-    <div className='petsitempage_block'>
+  
+   return (
+     <div className='container'>
+     <div className='petsitempage_block'>
         {
-          <img className='petsitempage_img' src={li.main_image} alt="" />
+         <img className='petsitempage_img' src={li.main_image} alt="" />
         }
       <div>
         <div className='petsitempage_info'>
@@ -35,13 +35,11 @@ import { useEffect, useState } from 'react'
             <p className='petsitempage_descrition' > {li.description} </p>
           }
         </div>
-        
-        <div className='petsitempage_contac'>
+         <div className='petsitempage_contac'>
           <h4 className='petsitempage_volonter'>ВОЛОНТЕР: ВАРВАРА</h4>
           <h4 className='petsitempage_contacts'>ТЕЛЕФОН: +996 555 567 847 </h4>
         </div>
-      </div>
-       
+      </div>   
     </div>
     {/* <div className='petsitempage_kartinki'>
         <img className='one' src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />

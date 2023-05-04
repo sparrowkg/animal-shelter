@@ -33,6 +33,10 @@ svg:hover {
 .footer_email {
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+.email:hover {
+    color: orange;
 }
   
   /* Стили для контейнера на маленьких экранах */
