@@ -47,7 +47,7 @@ table td:not(:last-child) {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }  
 thead {
-  background-color: rgb(184, 181, 181);
+  background-color: aqua;
   height: 50px;
 }
 th {

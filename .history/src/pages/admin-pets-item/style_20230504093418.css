@@ -6,7 +6,7 @@
 .form-submit {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-: center;
 }
 form {
   width: 500px;

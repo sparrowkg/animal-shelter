@@ -51,42 +51,7 @@ export const AdminPetsItemPage = () => {
   };
 
   return (
-   <div className='form-submit'>
-     <form onSubmit={handleSubmit}>
-      <div >
-        <label htmlFor="name">Name:</label>
-        <input 
-          type="text" 
-          id="name" 
-          value={name} 
-          onChange={(e) => setName(e.target.value)} 
-        />
-      </div>
-      
-       <div>
-          <label htmlFor="gender">Gender:</label>
-          <input type="text" id="gender" value={gender} onChange={(e) => setGender(e.target.value)} />
-       </div>
-       
-       <div>
-         <label htmlFor="short_text">Short text:</label>
-         <input type="text" id="short_text" value={short_text} onChange={(e) => setShort_text(e.target.value)} />
-       </div>
-       
-       <div>
-         <label htmlFor="description">Description:</label>
-         <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
-       </div>
-
-       <div>
-         <label htmlFor=" main_image">Image:</label>
-         <input type="image" id=" main_image" value={ main_image} onChange={(e) => setImage(e.target.value)} />
-       </div>
-      <button type="submit">Create Animal</button>
-    </form>
-    </div>
-  );
- 
+   div
 };
 
 export default AdminPetsItemPage;

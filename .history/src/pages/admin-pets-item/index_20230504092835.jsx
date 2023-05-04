@@ -51,7 +51,7 @@ export const AdminPetsItemPage = () => {
   };
 
   return (
-   <div className='form-submit'>
+   <div className=''>
      <form onSubmit={handleSubmit}>
       <div >
         <label htmlFor="name">Name:</label>
@@ -84,9 +84,8 @@ export const AdminPetsItemPage = () => {
        </div>
       <button type="submit">Create Animal</button>
     </form>
-    </div>
   );
- 
+   </div>
 };
 
 export default AdminPetsItemPage;

@@ -84,9 +84,8 @@ export const AdminPetsItemPage = () => {
        </div>
       <button type="submit">Create Animal</button>
     </form>
-    </div>
   );
- 
+   </div>
 };
 
 export default AdminPetsItemPage;

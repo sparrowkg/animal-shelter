@@ -9,7 +9,8 @@
   padding: 5%;
   width: 100%;
   font-size: 18px;
- 
+  /* background-color:  #fe8514; */
+  /* background-color: background: rgb(253,172,95); */
   background: radial-gradient(circle, rgba(253,172,95,1) 27%, rgba(254,133,20,1) 61%);;
 }
 
@@ -38,16 +39,17 @@
 /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
   .main__slide h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 /* Стили для контейнера на средних экранах */
 @media (min-width: 576px) and (max-width: 768px) {
   .main__slide h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
- }
+ 
+}
 
 /* Стили для контейнера на больших экранах */
 @media (min-width: 768px) and (max-width: 992px) {
