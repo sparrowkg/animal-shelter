@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Foto from "../../assets/pets1.png";
-import Foto1 from "../../assets/pets2.png";
+import Foto1 from "../../assets/pets5.png";
 import Foto2 from "../../assets/pets3.png";
 import Foto3 from "../../assets/pets4.png";
 
