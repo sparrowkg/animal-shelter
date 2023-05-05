@@ -1,8 +1,10 @@
 import './style.css'
 import { useEffect, useState } from 'react'
+import { useParams,useNavigate } from 'react-router-dom'
 
 
  function PetsItemPage() {
+  const history = useNavigate()
   const [li, setLi] = useState([])
   useEffect(() => {
     const currentURL = window.location.href;
@@ -16,13 +18,18 @@ import { useEffect, useState } from 'react'
   }, [])
   
    return (
+   
      <div className='container'>
+
+     
      <div className='petsitempage_block'>
         {
          <img className='petsitempage_img' src={li.main_image} alt="" />
         }
       <div>
+      <button className='button-pet-item' onClick={()=>history(-1)}>Назад</button>
         <div className='petsitempage_info'>
+          
           <div className='petsitem_name_male'>
             {
           <h2 className='petsitempage_name'>{li.name}</h2>
