@@ -6,7 +6,7 @@ import React, { useState } from 'react';
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
-  const loginApiUrl = 'http://35.195.136.135/api/auth_token'
+  const loginApiUrl = 'http://35.195.136.135/api/auth_token/'
 
   const handleSubmit = async (event) => {
     event.preventDefault();
