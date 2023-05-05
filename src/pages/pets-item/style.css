@@ -46,9 +46,6 @@
     justify-content: space-between;
     padding-bottom: 60px;
 }
-<<<<<<< HEAD
-
-=======
 .button-pet-item  {
    width: 40px;
    height: 40px;
@@ -63,7 +60,6 @@
     width: 28px;
     height: 28px;
 }
->>>>>>> 6a1c3e812fdaf7ae12261daeb335ba6b6213b33d
 
  @media (max-width: 576px) {
     .container {
