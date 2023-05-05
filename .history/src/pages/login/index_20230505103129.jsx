@@ -17,7 +17,7 @@ import React, { useState } from 'react';
         body: JSON.stringify({ username, password }),
       });
       const data = await response.json();
-      localStorage.setItem('token', data.token);
+      localStorage.setItem('adminToken', data.token);
     } catch (err) {
       setError('Неверные данные для входа. Попробуйте еще раз.');
     }

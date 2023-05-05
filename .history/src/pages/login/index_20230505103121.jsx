@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log({ username, password });
     try {
       const response = await fetch(loginApiUrl, {
         method: 'POST',
@@ -17,7 +18,7 @@ import React, { useState } from 'react';
         body: JSON.stringify({ username, password }),
       });
       const data = await response.json();
-      localStorage.setItem('token', data.token);
+      localStorage.setItem('adminToken', data.token);
     } catch (err) {
       setError('Неверные данные для входа. Попробуйте еще раз.');
     }

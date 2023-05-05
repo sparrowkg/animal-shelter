@@ -2,10 +2,10 @@ import './style.css'
 import { NavLink } from 'react-router-dom'
 
 const links = [
-    {id:1, to: '/', text: 'Главная'},
-    {id:2, to: '/pets/dogs', text: 'Собаки'},
-    {id:3, to: '/pets/cats', text: 'Кошки'},
-    {id:4, to: '/about', text: 'О нас'},
+    {id:1, to: '/', text: 'glav'},
+    {id:2, to: '/pets/dogs', text: 'dog'},
+    {id:3, to: '/pets/cats', text: 'cat'},
+    {id:4, to: '/about', text: 'avbout'},
 ]
 
 export const Dropdown = ({ onClose }) => {
@@ -16,7 +16,7 @@ export const Dropdown = ({ onClose }) => {
                 {
                     links.map(({ id, to, text }) => (
                         <NavLink 
-                            onClick={onClose} 
+                            onClick={} 
                             key={id} 
                             to={to}
                         >
