@@ -1,16 +1,25 @@
 import { useEffect, useState } from 'react'
 import { PetRow } from './pet-row'
 import './style.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 export const AdminPetsPage = () => {
   const [pets, setPets] = useState([])
+  const navigate = useNavigate()
+
   useEffect(() => {
-    fetch('/animals.json')
-      .then(res => res.json())
-      .then((data) => {
-        setPets(data)
-      })
+    const token = localStorage.getItem('token')
+
+    if (token) {
+      fetch('/animals.json')
+        .then(res => res.json())
+        .then((data) => {
+          setPets(data)
+        })
+    } else {
+      navigate('/admin/login')
+    }
+    
   }, [])
 
   return (
