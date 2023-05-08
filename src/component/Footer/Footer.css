@@ -6,7 +6,7 @@
 }
 .Footer .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 90px;
 }
@@ -29,7 +29,6 @@ svg{
 svg:hover {
     background-color: orange;
 }
-
 .footer_email {
     display: flex;
     align-items: center;
@@ -39,7 +38,6 @@ svg:hover {
     color: orange;
 }
   
-  /* Стили для контейнера на маленьких экранах */
 @media (max-width: 576px) {
     .Footer *{
         font-size: 12px;
@@ -53,7 +51,6 @@ svg:hover {
     }
   }
 
-  /* Стили для контейнера на средних экранах */
   @media (min-width: 576px) and (max-width: 768px) {
     .Footer  *{
         font-size: 12px;
@@ -70,7 +67,6 @@ svg:hover {
     }
   }
   
-  /* Стили для контейнера на больших экранах */
   @media (min-width: 768px) and (max-width: 992px) {
     .Footer  *{
        max-width: 960px;

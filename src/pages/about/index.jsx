@@ -1,14 +1,25 @@
 import "./style.css"
 export const AboutPage = () => {
     return (
+     <div className="container">
         <div className="about_title">
          <div className="about_container"> 
             <h3 className="about_title_text" >О НАС</h3>
             <p className="about_t">МЫ - ВОЛОНТЕРЫ  МУНИЦИПАЛЬНОГО ПРИЮТА ДЛЯ БЕЗДОМНЫХ ЖИВОТНЫХ </p>
-           
-            <img className="about_img" src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" alt="" />
-            <p className="about_text">Сердце в лапках - это муниципальный приют для бездомных собак и кошек. В нем живет почти 2500 собак и 150 кошек. Большие и маленькие, пушистые и гладкие, веселые и задумчивые - и на всех одна большая мечта - встретить своего Человека и найти Дом.</p>
+             <div className="about_img_s">
+            <img className="about_img" src="https://sport-dog.ru/wp-content/uploads/3/5/a/35a611c5ffcbcdfd9018aabf588c4daa.jpeg" alt="" />
+            <img className="about_img1" src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" alt="" />
+            <img className="about_img2" src="https://theidealist.ru/wp-content/uploads/2021/02/JbdO69vxVN8.jpg" alt="" />
+            </div>
+            <div className="about_text_p">
+             <p className="about_text">Сердце в лапках - это муниципальный приют для бездомных собак и кошек. В нем живет почти 2500 собак и 150 кошек. Большие и маленькие, пушистые и гладкие, веселые и задумчивые - и на всех одна большая мечта - встретить своего Человека и найти Дом.</p>
+             <h4>Взять домой</h4>
+             <p className="about_text">Если вы хотите взять собаку или кошку, не ищите питомник, в котором можно купить щенка или котенка - просто свяжитесь с нами, и вы обязательно найдете себе самого лучшего друга. Во всем мире это уже стало доброй традицией - человек, который решил завести питомца, обращается в приют, чтобы подарить заботу и любовь тому, кто уже появился на свет, но ему почему-то досталась нелегкая судьба. Мы поможем вам выбрать животное с учетом ваших пожеланий и предпочтений, с радостью познакомим со всеми нашими собаками и кошками. Все наши питомцы привиты и стерилизованы.</p>
+             <h4>Помочь приюту</h4>
+             <p className="about_text">Нашим питомцам нужна ваша помощь! Вы можете сделать их жизнь лучше. Приюту Сердце в лапках всегда требуются корма, поводки и ошейники, лекарства, материальная и информационная поддержка. А еще нашим собакам и кошкам очень нужна ласка и общение с человеком, поэтому мы всегда рады новым волонтерам.</p>
+            </div>
          </div>
         </div>
+     </div>
     )  
 }
