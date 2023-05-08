@@ -22,14 +22,14 @@ export const AdminPetsItemPage = () => {
   }
 
   useEffect(() => {
-    if (id === 'new') return
+    if (!id) return
     fetch(`${api}/${type}/${id}`)
       .then(res => res.json())
       .then(setData)
   }, [id])
 
   useEffect(() => {
-    if (id === 'new') return
+    if (!id) return
     setName(data?.name)
     setGender(data?.gender)
     setShort_text(data?.short_text)
@@ -47,6 +47,11 @@ export const AdminPetsItemPage = () => {
     };
     
 
+    if (!id) {
+      // запрос на создание (POST)
+    } else {
+      // запрос на редактирование PUT
+    }
     clearForm()
   };
 
@@ -82,7 +87,9 @@ export const AdminPetsItemPage = () => {
          <label htmlFor=" main_image">Image:</label>
          <input type="image" id=" main_image" value={ main_image} onChange={(e) => setImage(e.target.value)} />
        </div>
-      <button type="submit">Create Animal</button>
+      <button type="submit" onClick={handleSubmit}>
+        {!id ? 'Create ' : 'Update '}
+         Animal</button>
     </form>
     </div>
   );

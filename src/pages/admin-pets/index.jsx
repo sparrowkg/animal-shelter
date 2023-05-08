@@ -3,6 +3,8 @@ import { PetRow } from './pet-row'
 import './style.css'
 import { NavLink, useNavigate } from 'react-router-dom'
 
+const api = 'http://35.195.136.135/api'
+
 export const AdminPetsPage = () => {
   const [pets, setPets] = useState([])
   const navigate = useNavigate()
@@ -11,7 +13,7 @@ export const AdminPetsPage = () => {
     const token = localStorage.getItem('token')
 
     if (token) {
-      fetch('/animals.json')
+      fetch(`${api}/animals/`)
         .then(res => res.json())
         .then((data) => {
           setPets(data)
