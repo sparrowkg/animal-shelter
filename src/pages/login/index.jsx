@@ -40,7 +40,7 @@ export const LoginPage = () => {
   };
 
   if (redirectToAdmin) {
-    return <Navigate to="/admin" />; // Замените "/admin" на путь к странице админа
+    return <Navigate to="/admin" />
   }
 
   return (

@@ -16,6 +16,9 @@ export const Links = () => {
             <div className="div__for__link">
               <NavLink to="/about">О нас</NavLink> 
             </div>
+            <div className="div__for__link">
+              <NavLink to="/admin/login">Войти</NavLink> 
+            </div>
         </div>
     )
 }
